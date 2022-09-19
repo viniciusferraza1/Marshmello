@@ -11,7 +11,7 @@
 body {
     background-image: url(Images/background.jpg);
     background-position: center center;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -21,32 +21,39 @@ body {
 
 .header {
     height: 13vh;
-    width: auto;
+    max-width: 100%;
     background-color: black;
     display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 #hleft {
     color: aliceblue;
+    vertical-align: middle;
 }
 
 #icon-white {
-    padding: 0px 0px 0px 28px;
-    margin: 0px;
-    height: 15vh;
+    padding: 0px 0px 0px 20px;
+    margin: 5px;
+    height: 12vh;
 }
 
 .header h1 {
-    font-size: 180%;
+    font-size: 2.5vw;
     color: aliceblue;
-    padding: 20px 0px 0px 430px;
+    padding: 3vh 0vw 0vh 30vw;
+    vertical-align: middle;
 
 }
 
 .header #hright {
     color: aliceblue;
     display: flex;
-    font-size: large;
+    font-size: 1em;
+    padding-right: auto;
+    margin-right: auto;
+    vertical-align: middle;
 }
 
 #hright li {
@@ -66,17 +73,18 @@ body {
 
 .lateral {
     height: 520px;
-    max-width: 20vw;
+    width: 20vw;
     background-color: black;
     margin: 10px 10px 10px 10px;
     border-radius: 8px;
     position: fixed;
+    vertical-align: middle;
 
 }
 
 .container-1 {
     display: flex;
-    max-width: 1500px;
+    width: 1350px;
 }
 
 .lateral a {
@@ -85,14 +93,15 @@ body {
     }
 
 .lateral ul {
-    padding: 10px 0px 0px 0px;
+    padding: 10vh 2vw 0px 2vw;
     list-style: none;
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 
 .lateral li {
     padding-top: 14px;
     padding-left: 10px;
+    font-size: 3vw;
 }
 
 .lateral li:hover {
@@ -107,10 +116,12 @@ body {
 
 .lateral #img-config {
     margin: -6px 5px -5px 10px;
+    width: 16%;
 }
 
 #youtube {
-    padding: 5px 0px 0px 20px;
+    padding: 20px 0vh 0vh 20px;
+    width: 92%;
 }
 
 .centro {
@@ -125,7 +136,8 @@ body {
 
 }
 
-.row {display: flex;}
+.row {padding-top: 5% ;display: flex;
+padding-left: 3%;}
 
 .playbox {
     margin: 20px 20px 20px 20px ;
